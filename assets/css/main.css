@@ -279,7 +279,7 @@ input, select, textarea {
 			display: block;
 			line-height: 1.75;
 			padding: 1rem 1.5rem;
-			
+			overflow-x: auto;
 		}
 
 	hr {
@@ -1568,7 +1568,7 @@ input, select, textarea {
 				height: 4rem;
 				cursor: pointer;
 				text-indent: 4rem;
-				overflow: hidden;
+				
 				white-space: nowrap;
 			}
 
