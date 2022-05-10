@@ -31,8 +31,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-	overflow-y: scroll;
-	
 }
 
 ol, ul {
@@ -90,7 +88,6 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
-		position: relative;
 	}
 
 	*, *:before, *:after {
@@ -283,7 +280,6 @@ input, select, textarea {
 			line-height: 1.75;
 			padding: 1rem 1.5rem;
 			overflow-x: auto;
-			overflow-y: scroll;
 		}
 
 	hr {
@@ -937,7 +933,6 @@ input, select, textarea {
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
-		overflow-y: scroll;
 	}
 
 	table {
@@ -1326,7 +1321,7 @@ input, select, textarea {
 				transition-delay: 0.25s;
 				padding: 3rem 2rem;
 				max-height: 40rem;
-				overflow-y: scroll;
+				overflow: hidden;
 			}
 
 				#header .content .inner > :last-child {
@@ -1573,7 +1568,7 @@ input, select, textarea {
 				height: 4rem;
 				cursor: pointer;
 				text-indent: 4rem;
-				overflow-y: scroll;
+				overflow: hidden;
 				white-space: nowrap;
 			}
 

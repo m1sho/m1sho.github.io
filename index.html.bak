@@ -36,7 +36,7 @@
         </article>
         <!-- Work -->
         <article id="work">
-          <h2 class="major">Work</h2>
+          <h2 class="major">My</h2>
           <span class="image main"><img src="images/pic02.jpg" alt=""></span>
           <p> </p>
           <p> </p>
@@ -78,19 +78,19 @@ name="message" id="message" rows="4"></textarea> </div>
           </ul>
         </article>
         <article id="camera">
-          <h2 class="major">Work</h2>
+          <h2 class="major">&nbsp;Nikon D3300</h2>
+          <p class="has-text-align-left">This camera uses the same 24.2 MP
+            sensor as its younger brothers, albeit lacks the contemporary smart
+            features.</p>
+          <h2 class="has-text-align-center">Lenses</h2>
+          <ol>
+            <li>E-Series 52mm (1.8)</li>
+            <li> Nikon DX 18-70mm (3.5-4.5)</li>
+            <li> Nikon VR (Stock) 18-55mm (3.5-5.6G)</li>
+          </ol>
+          <p></p>
           <span class="image main"><img src="images/pic02.jpg" alt=""></span>
-          <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.</p>
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.</p>
+          
         </article>
         <!-- Elements -->
         <article id="elements">
@@ -174,8 +174,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
       </div>
       <!-- Footer -->
       <footer id="footer">
-        <p class="copyright">© Untitled. Design: <a href="https://html5up.net">HTML5
-            UP</a>.</p>
+        <p> Misho V 2022</p>
       </footer>
     </div>
     <!-- BG -->
@@ -186,6 +185,5 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    
   </body>
 </html>
