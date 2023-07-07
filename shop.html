@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>eCommerce Example</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .product-tile {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .product-tile .product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+      margin: 10px;
+      background-color: white;
+      border-radius: 5px;
+      padding: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .product-tile .product:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .product-tile .product img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .product-tile .product .price {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      border-radius: 5px;
+      padding: 20px;
+      width: 400px;
+      text-align: center;
+    }
+
+    .modal .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-tile">
+    <div class="product" onclick="openModal('Product 1', 'images/product1.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac nulla neque. Sed mattis arcu in dolor sodales, et interdum velit rutrum. Sed non urna ut est aliquet tempus.')">
+      <img src="images/product1.jpg" alt="Product 1">
+      <div class="price">$9.99</div>
+    </div>
+    <div class="product" onclick="openModal('Product 2', 'images/product2.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac nulla neque. Sed mattis arcu in dolor sodales, et interdum velit rutrum. Sed non urna ut est aliquet tempus.')">
+      <img src="images/product2.jpg" alt="Product 2">
+      <div class="price">$14.99</div>
+    </div>
+    <!-- Add more product tiles here as needed -->
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="

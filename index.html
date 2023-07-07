@@ -16,7 +16,7 @@
         <nav>
           <ul>
             <li><a href="#pics">Photography</a></li>
-            <li><a href="#coding">Coding</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="#camera">Cameras</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -26,11 +26,27 @@
       </header>
       <!-- Main -->
       <div id="main">
+        <article id="camera">
+          <h2 class="major">&nbsp;Cameras</h2>
+          <span class="image left"><img src="images/cams.jpg" alt=""></span>
+          <h2 class="major">&nbsp;Nikon D3300</h2>
+          <span class="image left"><img src="images/pic02.jpg" alt=""></span>
+          <p class="has-text-align-left">Main camera; APS-C DSLR used with 50mm,
+            35mm, and 70-200mm Lenses. </p>
+          <h2 class="major">&nbsp;Nikon N90s</h2>
+          <span class="image left"><img src="images/nikon.jpg" alt=""></span>
+          <p class="has-text-align-left">Advanced 35mm SLR from the late 90s.
+            Has auto features and uses same F-mount lenses as DSLR. </p>
+          <h2 class="major">Edixa Reflex</h2>
+          <span class="image left"><img src="images/reflex.jpg" alt=""></span>
+          <p class="has-text-align-left">35mm film camera from West Germany. Has
+            an optional waist-level viewfinder.</p>
+        </article>
         <!-- Intro -->
         <article id="pics">
-         <h1 style ="text-align: left;" >Work Samples</h1>
+          <h1 style="text-align: left;">Work Samples</h1>
           <h2 class="major">Portraits</h2>
-          <span class="image main"><img src="images/p.jpg" alt=""></span>
+          <span class="image "><img src="images/p.jpg" alt=""></span>
           <p> </p>
           <h2 class="major">Landscapes</h2>
           <span class="image main"><img src="images/l.jpg" alt=""></span>
@@ -51,7 +67,8 @@
           <h2 class="major">About</h2>
           <span class="image left"><img src="images/me.jpg" alt=""></span>
           <p>I'm Jean-Michael and this is a showcase of my projects in the
-            realms of picture taking and coding. I enjoy taking photos of a variety of subjects and collecting the cameras for them. Peace ☮. </p>
+            realms of picture taking and coding. I enjoy taking photos of a
+            variety of subjects and collecting the cameras for them. Peace ☮. </p>
         </article>
         <!-- Contact -->
         <article id="contact">
@@ -63,47 +80,80 @@
                     type="submit"></span></li>
             </ul>
           </form>
-           <form action="https://www.instagram.com/mishovphotos" method="get" target="_blank">
-           <button type="submit">Instagram</button>
-              
-          </form>
+          <form action="https://www.instagram.com/mishovphotos" method="get" target="_blank">
+            <button type="submit">Instagram</button> </form>
         </article>
-        <article id="coding">
-          <h2 class="major">&nbsp;MetaCleanPy (WIP)</h2>
-          <span class="image left"><img src="images/metaclean.jpg" alt=""></span>
-          <p class="has-text-align-left">Python tkinter GUI-based widget that
-            allows you to choose a file and *replace* it with a copy that lacks
-            metadata.</p>
-          <p><a href="https://github.com/m1sho/MetaCleanPy">github</a></p>
-          <h2 class="major">&nbsp;Kazakh WotD (WIP)</h2>
-          <span class="image left"><img src="images/kz.jpg" alt=""></span>
-          <p class="has-text-align-left">Python qt5 GUI-based widget that gives
-            a random word from a bank of several thousand Kazakh film subtitles
-            with an option to translate the given word.</p>
-          <p><a href="https://github.com/m1sho/KazakhWotD">github</a></p>
-          <h2 class="major">&nbsp;CSV2HTML</h2>
-           <span class="image left"><img src="images/csv.jpg" alt=""></span>
-          <p class="has-text-align-left">Python text-based program that allows
-            you to convert 2 kinds of .csv: contacts and datasets.</p>
-          <p><a href="https://github.com/m1sho/PythonCSV2HTML">github</a></p>
-        </article>
-        <article id="camera">
-          <h2 class="major">&nbsp;Cameras</h2>
-          <span class="image main"><img src="images/cams.jpg" alt=""></span>
-          <h2 class="major">&nbsp;Nikon D3300</h2>
-          <span class="image left"><img src="images/pic02.jpg" alt=""></span>
-          <p class="has-text-align-left">Main camera; APS-C DSLR used with 50mm,
-            35mm, and 70-200mm Lenses. </p>
-          <h2 class="major">&nbsp;Nikon N90s</h2>
-          <span class="image left"><img src="images/nikon.jpg" alt=""></span>
-          <p class="has-text-align-left">Advanced 35mm SLR from the late 90s.
-            Has auto features and uses same F-mount lenses as DSLR. </p>
-          <h2 class="major">Edixa Reflex</h2>
-          <span class="image left"><img src="images/reflex.jpg" alt=""></span>
-          <p class="has-text-align-left">35mm film camera from West Germany. Has
-            an optional waist-level viewfinder.</p>
-        </article>
-        <!-- Elements --> .. </div>
+        <article id="blog">
+          <title>Image Tile Example</title>
+          <style>
+    body {
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+   .image-tile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-tile img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 5px;
+  transition: transform 0.3s ease;
+  border: none; /* Add this line to remove the border */
+}
+
+.image-tile img:hover {
+  transform: scale(1.1);
+}
+
+.image-tile .image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 110px;
+  height: 130px;
+  margin: 5px;
+  
+}
+
+.image-title {
+  margin-top: 5px;
+}
+
+
+          </style>
+          <div class="image-tile">
+            <div class="image-container"> <a href="spring.html"> <img src="images/spring.jpg"
+                  alt="Spring"> </a> 
+                <p class="image-title">Spring '23</p>
+             </div>
+            <div class="image-container"> <a href="summer.html"> <img src="images/summer.jpg"
+                  alt="Summer"> </a>  <p class="image-title">Summer '23</p></div>
+            <div class="image-container"> <a href="fall.html"> <img src="images/fall.jpg"
+                  alt="Autumn"> </a> <p class="image-title">Fall '22</p> </div>
+            <div class="image-container"> <a href="winter.html"> <img src="images/winter.jpg"
+                  alt="Winter"> </a>  <p class="image-title">Winter '22</p></div>
+          </div>
+          <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center; /* Center the text */
+    }
+  </style>
+          <!-- Elements --> </article>
+      </div>
       <footer id="footer">
         <p>m1sho 2023</p>
       </footer>
@@ -116,6 +166,5 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    
   </body>
 </html>
