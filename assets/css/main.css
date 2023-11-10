@@ -172,6 +172,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2rem 0;
+		text-align: left;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -678,7 +679,7 @@ input, select, textarea {
 			}
 
 		.image.left {
-			float: left;
+			
 			padding: 0 1.5em 1em 0;
 			top: 0.25em;
 			 pointer-events: none;
